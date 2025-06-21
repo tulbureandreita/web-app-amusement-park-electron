@@ -1,0 +1,37 @@
+# Global ignores
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log*
+
+# React client
+client/node_modules/
+client/build/
+client/.env
+client/.DS_Store
+
+# Express server
+server/node_modules/
+server/.env
+server/.DS_Store
+
+# Electron app
+electron-app/node_modules/
+electron-app/.DS_Store
+
+# Python
+python/__pycache__/
+python/*.pyc
+python/.DS_Store
+
+# VSCode or JetBrains IDEs
+.vscode/
+.idea/
+
+# Mac/Linux system files
+*.swp

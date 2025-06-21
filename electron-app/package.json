@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "electron": "^36.5.0"
+  },
+  "dependencies": {
+    "tree-kill": "^1.2.2"
+  }
+}
