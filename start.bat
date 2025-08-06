@@ -42,6 +42,17 @@ if not exist electron-app\node_modules (
   timeout /t 2 >nul
 )
 
+if not exist python\facial-analysis\venv (
+  echo Creating Python virtual environment and installing dependencies...
+  pushd python\facial-analysis
+  python -m venv venv
+  call venv\Scripts\activate
+  pip install -r requirements.txt
+  deactivate
+  popd
+  timeout /t 2 /nobreak >nul
+)
+
 echo === Launching Electron app ===
 call npx electron electron-app/main.js
 
